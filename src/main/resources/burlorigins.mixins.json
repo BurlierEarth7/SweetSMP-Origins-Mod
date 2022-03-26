@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ca.burlier.burlorigins.mixin.BurlOriginsMixin"
+    "BurlOriginsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
