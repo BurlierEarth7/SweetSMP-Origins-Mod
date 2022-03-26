@@ -32,13 +32,9 @@
             "type": "origins:and",
             "conditions": [
               {
-                "type": "origins:nbt",
-                "nbt": "{stamina_booster: 1b}"
-              },
-              {
                 "type": "origins:ingredient",
                 "ingredient": {
-                  "item": "minecraft:stick"
+                  "item": "sweet:stamina_booster"
                 }
               }
             ]

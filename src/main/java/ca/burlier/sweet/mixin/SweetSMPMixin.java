@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class SweetSMPMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		SweetSMPMod.LOGGER.info("BurlOrigins mixin Loaded!");
+		SweetSMPMod.LOGGER.info("SweetSMP mixin loaded! hope you have fun :)");
 	}
 }
