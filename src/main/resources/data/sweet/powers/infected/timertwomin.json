@@ -1,0 +1,41 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "execute as @s run function sweet:infected/timertwomin"
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "sweet:infected/infection",
+            "comparison": "<=",
+            "compare_to": 117
+          },
+          {
+            "type": "origins:resource",
+            "resource": "sweet:infected/infection",
+            "comparison": ">=",
+            "compare_to": 61
+          }
+        ]
+      },
+      {
+        "type": "origins:brightness",
+        "comparison": "<",
+        "compare_to": 0.33333334
+      },
+      {
+        "type": "origins:exposed_to_sun",
+        "inverted": true
+      }
+    ]
+
+  },
+  "hidden": true
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Chilly",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Became the Snow Fox origin!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:white_wool"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedsnowfox": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:root"
+}

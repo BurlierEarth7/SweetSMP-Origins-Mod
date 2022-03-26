@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Disinfected",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Cured your Infection with a golden apple!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:dead_fire_coral_fan"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "wascured": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:events/got_bit"
+}

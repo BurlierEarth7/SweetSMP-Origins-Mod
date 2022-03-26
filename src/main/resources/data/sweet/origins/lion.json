@@ -1,0 +1,15 @@
+{
+    "impact": 1,
+    "unchoosable": false,
+    "name": "§e§lLion",
+    "description": "Ferocious and Strong, this species excels in combat and movement.",
+    "icon": "minecraft:netherite_helmet",
+    "powers": [
+        "sweet:lion/claws",
+        "sweet:lion/leap",
+        "sweet:lion/vision",
+        "sweet:lion/vision_players",
+        "sweet:lion/select",
+        "sweet:lion/carnivore"
+    ]
+}

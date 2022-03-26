@@ -1,0 +1,47 @@
+{
+  "type": "origins:prevent_feature_render",
+  "features": ["armor", "stuck_objects"],
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "head",
+        "item_condition": {
+          "type": "origins:armor_value",
+          "comparison": "<=",
+          "compare_to": 2
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "chest",
+        "item_condition": {
+          "type": "origins:armor_value",
+          "comparison": "<=",
+          "compare_to": 7
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "legs",
+        "item_condition": {
+          "type": "origins:armor_value",
+          "comparison": "<=",
+          "compare_to": 5
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "feet",
+        "item_condition": {
+          "type": "origins:armor_value",
+          "comparison": "<=",
+          "compare_to": 2
+        }
+      }
+    ]
+  },
+  "name": "§a§nDeception",
+  "description": "§lArmor§r you wear will §lnot§r appear on you, so long as its all below §b§ldiamond§r strength. Stuck objects, such as an §larrow§r, will §lnot§r appear either."
+}

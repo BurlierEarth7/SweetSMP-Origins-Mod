@@ -1,0 +1,38 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run effect give @s speed 2 0 true"
+    },
+    "interval": 30,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+          },
+          {
+            "type": "origins:in_block",
+            "block_condition": {
+              "type": "origins:block",
+              "block": "minecraft:water"
+            },
+            "inverted": true
+          },
+          {
+            "type": "origins:in_rain",
+            "inverted": true
+          },
+          {
+            "type": "origins:brightness",
+            "comparison": ">=",
+            "compare_to": 0.17948718
+          }
+        ]
+      },
+    "name": "Speedy",
+    "description": "You run as fast as the wind! You run even faster when it is darker"   
+}
+

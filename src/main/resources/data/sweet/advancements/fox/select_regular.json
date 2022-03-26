@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Stealthy",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Became the Fox origin!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:orange_wool"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedfox": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:root"
+}

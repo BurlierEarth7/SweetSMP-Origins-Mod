@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Sprinter",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Used the sprint ability!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:iron_boots"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedlion": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:skills/parkour/selected"
+}

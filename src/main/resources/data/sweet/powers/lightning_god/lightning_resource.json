@@ -1,0 +1,19 @@
+{
+  "type": "origins:resource",
+  "min": 0,
+  "max": 7,
+  "start_value": 7,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 2,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "sweet:lightning_god/lightning_resource",
+      "comparison": "<",
+      "compare_to": 7
+    }
+  },
+  "name": "Charge",
+  "definition": "You can hold up to 7 charges of lightning, it takes 3 seconds to regain one charge. You will only regain charges when you are in the overworld"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:infected/select"
+    },
+    "entity_action_respawned": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:infected/select"
+    },
+    "entity_action_added": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:infected/select"
+    },
+    "entity_action_removed": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:infected/remove"
+    },
+    "name": "Infection",
+    "description": "You have been infected, you can counterract the effects with light, but if left in the dark it will mutate. use the command \"/trigger help_infected\" to view more details"
+}

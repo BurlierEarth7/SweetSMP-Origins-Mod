@@ -1,0 +1,157 @@
+{
+  "type": "origins:multiple",
+  "run": {
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.9,
+      "operation": "multiply_total"
+    }
+  },
+  "jump": {
+    "type": "origins:modify_jump",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.5
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "particle cloud ~ ~ ~ 0.3 0.3 0.3 0.01 16 normal @a"
+    }
+  },
+  "shaders": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/phosphor.json"
+  },
+  "shake": {
+    "type": "origins:shaking"
+  },
+  "glow": {
+    "type": "origins:entity_glow",
+    "bientity_condition": {
+      "type": "origins:can_see"
+    },
+    "entity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:entity_type",
+              "entity_type": "minecraft:player"
+            },
+            {
+              "type": "origins:entity_type",
+              "entity_type": "minecraft:villager"
+            }
+          ]
+        }
+      ]
+    },
+    "use_teams": false,
+    "red": 1.0,
+    "green": 0.0,
+    "blue": 0.0
+  },
+  "slash": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "execute as @s run function sweet:infected/mutations/slash"
+    },
+    "cooldown": 60,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": 1
+    },
+    "key": "key.attack"
+  },
+  "slash_effects": {
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effects": [
+        {
+          "effect": "minecraft:nausea",
+          "amplifier": 1,
+          "duration": 100
+        },
+        {
+          "effect": "minecraft:poison",
+          "amplifier": 1,
+          "duration": 100
+        }
+      ]
+    },
+    "cooldown": 60,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "bite": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "execute as @s run function sweet:infected/mutations/bite"
+    },
+    "cooldown": 1,
+    "hud_render": {
+      "should_render": false
+    },
+    "key": "key.use"
+  },
+  "bite_effects_bitten": {
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:events/infected/bitten"
+      }
+    }
+  },
+  "bite_effects_feral": {
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:infected/mutations/bite_player"
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:villager"
+          },
+          {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        ]
+      }
+    }
+  },
+  "dash": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "execute as @s run function sweet:infected/mutations/dash"
+    },
+    "cooldown": 300,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 20
+    },
+    "key": "key.sprint"
+  },
+  "name": "Mutated",
+  "description": "Your vision has been severely decreased, Break = Slash, Use = Bite, Sprint = Dash. Bite a player or villager to revert to normal!"
+}

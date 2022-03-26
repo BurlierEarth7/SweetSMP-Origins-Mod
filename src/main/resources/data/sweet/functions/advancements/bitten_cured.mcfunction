@@ -1,0 +1,1 @@
+advancement grant @s only sweet:events/cured_bite

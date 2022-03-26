@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "origins": [
+        "sweet:fox",
+        "sweet:lion",
+        "sweet:infected",
+        "sweet:feral_infected",
+        "sweet:panda",
+        "sweet:glow_cat",
+        "sweet:lightning_god"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Mutated",
+            "color": "dark_red",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Let your Immunity run out, transforming you into a feral beast.",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:crimson_roots"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "mutate": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:infected/select"
+}

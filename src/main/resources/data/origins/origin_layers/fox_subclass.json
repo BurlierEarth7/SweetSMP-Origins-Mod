@@ -1,0 +1,16 @@
+{
+    "name": "Foxes",
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "sweet:fox",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "sweet:fox_classes/foxorigin",
+                "sweet:fox_classes/snowfoxorigin"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "origins:self_glow",
+    "use_teams": false,
+    "red": 0.56862745098,
+    "green": 0.89019607843,
+    "blue": 0.65098039215,
+    "bientity_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:can_see"
+            },
+            {
+                "type": "origins:distance",
+                "comparison": "<=",
+                "compare_to": 30
+            }
+        ]
+    },
+    "name": "Glowing",
+    "description": "Anyone within 30 blocks of you who can see you will see you glowing"
+}

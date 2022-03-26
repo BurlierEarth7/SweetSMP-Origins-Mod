@@ -1,0 +1,7 @@
+{
+    "type": "origins:modify_player_spawn",
+    "dimension": "overworld",
+    "biome": "minecraft:snowy_taiga",
+    "name": "Snow Inhabitant",
+    "description": "You spawn in a snowy taiga"
+}

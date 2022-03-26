@@ -1,0 +1,24 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "sweet:infected/mutations/bitten/bitten_infection",
+    "change": -1
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:brightness",
+        "comparison": "<",
+        "compare_to": 0.33333334
+      },
+      {
+        "type": "origins:exposed_to_sun",
+        "inverted": true
+      }
+    ]
+  },
+  "hidden": true
+}

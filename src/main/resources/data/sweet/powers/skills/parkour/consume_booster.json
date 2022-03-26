@@ -1,0 +1,49 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "execute as @s run function sweet:skills/parkour/consume_booster"
+            }
+        ]
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.use",
+        "continuous": false
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:nbt",
+                "nbt": "{stamina_booster: 1b}"
+              },
+              {
+                "type": "origins:ingredient",
+                "ingredient": {
+                  "item": "minecraft:stick"
+                }
+              }
+            ]
+          }
+    },
+    "name": "§b§nStamina Booster",
+    "description": "Recieve a §lcustom recipe§r to make §l§bstamina boosters§r§r. these boosters can be used at §lany time§r and §breplenish all your stamina!§r"
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Lion",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Became the Lion origin!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:netherite_helmet"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedlion": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:root"
+}

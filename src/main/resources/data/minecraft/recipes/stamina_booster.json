@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "id": "sweet:stamina_booster_recipe",
+    "pattern": [
+        " #$",
+        "#*#",
+        "/# "
+    ],
+    "key": {
+        "#": {
+            "tag": "sweet:glass_blocks"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "$": {
+            "tag": "minecraft:wooden_buttons"
+        },
+        "*": {
+            "item": "minecraft:dragon_breath"
+        }
+    },
+    "result": {
+        "item": "minecraft:chicken_spawn_egg",
+        "count": 1
+    }
+}

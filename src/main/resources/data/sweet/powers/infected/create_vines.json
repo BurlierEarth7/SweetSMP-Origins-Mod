@@ -1,0 +1,34 @@
+{
+    "type": "origins:item_on_item",
+    "using_item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:nether_wart"
+        }
+    },
+    "on_item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:vine"
+        }
+    },
+    "result": {
+        "item": "minecraft:weeping_vines",
+        "amount": 4
+    },
+    "using_item_action": {
+        "type": "origins:consume",
+        "amount": 1
+    },
+    "on_item_action": {
+        "type": "origins:consume",
+        "amount": 1
+    },
+    "entity_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.magma_cube.squish",
+        "volume": 0.75,
+        "pitch": 2
+    },
+    "hidden": true
+}

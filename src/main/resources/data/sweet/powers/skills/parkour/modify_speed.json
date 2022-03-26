@@ -1,0 +1,24 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "execute as @s run function sweet:skills/parkour/sprinting"
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:power_active",
+        "power": "sweet:skills/parkour/sprint"
+      },
+      {
+        "type": "origins:resource",
+        "resource": "sweet:skills/parkour/stamina_stamina",
+        "comparison": ">",
+        "compare_to": 1
+      }
+    ]
+  },
+  "hidden": true
+}

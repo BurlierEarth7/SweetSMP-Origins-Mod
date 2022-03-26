@@ -1,0 +1,29 @@
+{
+    "impact": 3,
+    "unchoosable": false,
+    "name": "§c§lInfected",
+    "description": "Once lost in the crimson forests of the nether, these people has been corrupted by the fungus and diseases, their minds lost forever",
+    "icon": "minecraft:crimson_roots",
+    "powers": [
+        "sweet:infected/infection",
+        "sweet:infected/select",
+        "sweet:infected/eat_vines",
+        "sweet:infected/echolocate",
+        "sweet:infected/warnstart",
+        "sweet:infected/warntwomin",
+        "sweet:infected/warnsixty",
+        "sweet:infected/warnthirty",
+        "sweet:infected/infection_refill",
+        "sweet:infected/infection_update",
+        "sweet:infected/evolve",
+        "sweet:infected/nohunger",
+        "sweet:infected/decrease_in_crimson_forest",
+        "sweet:infected/crimson_forest_alarm",
+        "sweet:infected/timerstart",
+        "sweet:infected/timertwomin",
+        "sweet:infected/timersixty",
+        "sweet:infected/timerthirty",
+        "sweet:infected/efficient",
+        "sweet:infected/create_vines"
+    ]
+}

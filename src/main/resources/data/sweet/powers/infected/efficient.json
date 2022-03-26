@@ -1,0 +1,63 @@
+{
+  "type": "origins:multiple",
+  "mine_speed": {
+    "type": "origins:modify_break_speed",
+    "modifier": {
+      "operation": "multiply_base",
+      "value": 2
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "sweet:infected/infection",
+      "comparison": "<=",
+      "compare_to": 178
+    }
+  },
+  "no_tool": {
+    "type": "origins:modify_harvest",
+    "allow": true,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "sweet:infected/infection",
+      "comparison": "<=",
+      "compare_to": 178
+    }
+  },
+  "xp_gain": {
+    "type": "origins:modify_xp_gain",
+    "modifier": {
+      "operation": "multiply_base",
+      "value": 2.0,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "sweet:infected/infection",
+        "comparison": "<=",
+        "compare_to": 178
+      }
+    }
+  },
+  "portable_ender_chest": {
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:ender_chest"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:item.armor.equip_elytra",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": "secondary"
+  },
+  "name": "Efficient",
+  "description": "Living with a timer has taught you to be quick, you mine all blocks 3x faster and can mine any block without the required tool, aswell as gain 3x as much XP when your timer is active. You also have a portable Ender Chest that can be accessed at any time"
+}

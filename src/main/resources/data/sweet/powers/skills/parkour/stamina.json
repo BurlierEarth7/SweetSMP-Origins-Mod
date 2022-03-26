@@ -1,0 +1,61 @@
+{
+  "type": "origins:multiple",
+  "stamina": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 400,
+    "start_value": 400,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 16,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "sweet:skills/parkour/stamina_stamina",
+        "comparison": "<",
+        "compare_to": 400
+      }
+    }
+  },
+  "stamina_recharge": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sweet:skills/parkour/stamina_stamina",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:scoreboard",
+      "objective": "usingStamina",
+      "comparison": "!=",
+      "compare_to": 1
+    },
+    "interval": 1
+  },
+  "stamina_consume": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "sweet:skills/parkour/stamina_stamina",
+      "change": -2
+    },
+    "condition": {
+      "type": "origins:scoreboard",
+      "objective": "usingStamina",
+      "comparison": "==",
+      "compare_to": 1
+    },
+    "interval": 1
+  },
+  "shake_low_stamina": {
+    "type": "origins:shaking",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "sweet:skills/parkour/stamina_stamina",
+      "comparison": "<=",
+      "compare_to": 120
+    }
+  },
+  "name": "§b§nStamina",
+  "description": "You have §l10 seconds of stamina§r (400 ticks, most movement abilities cost 2 per tick), this can be used for specific actions that cost §bstamina§r, such as §2§lsprinting§r or §2§lclimbing§r. Any abilities below cost or refill §bstamina§r"
+}

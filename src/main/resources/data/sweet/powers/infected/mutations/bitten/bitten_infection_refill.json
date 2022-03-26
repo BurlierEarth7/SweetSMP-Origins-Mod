@@ -1,0 +1,32 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:infected/bitten/bitten_notify_refill"
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "sweet:infected/mutations/bitten/bitten_infection",
+        "change": 1
+      }
+    ]
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:brightness",
+        "comparison": ">",
+        "compare_to": 0.33333334
+      },
+      {
+        "type": "origins:exposed_to_sun"
+      }
+    ]
+  },
+  "hidden": true
+}

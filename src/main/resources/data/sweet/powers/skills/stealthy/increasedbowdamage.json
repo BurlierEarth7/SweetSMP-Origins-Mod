@@ -1,0 +1,25 @@
+{
+  "type": "origins:modify_projectile_damage",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:projectile",
+        "projectile": "minecraft:arrow"
+      },
+      {
+        "type": "origins:projectile",
+        "projectile": "minecraft:spectral_arrow"
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 1
+  },
+  "condition": {
+      "type": "origins:sneaking"
+  },
+  "name": "§a§nPrecise Shot",
+  "description": "§lArrows§r and §6§lSpectral§r §6§lArrows§r you shoot from a bow deal §4§l2x damage§r when §lcrouching§r"
+}

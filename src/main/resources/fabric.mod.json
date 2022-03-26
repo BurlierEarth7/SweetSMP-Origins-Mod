@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "burlorigins",
+  "id": "sweet",
   "version": "${version}",
 
-  "name": "Burlier Origins",
+  "name": "SweetSMP Origins",
   "description": "Adds new origins to the origins mod!",
   "authors": [
     "BurlierEarth7#5034 (Discord)"
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ca.burlier.burlorigins.BurlOriginsMod"
+      "ca.burlier.sweet.SweetSMPMod"
     ]
   },
   "mixins": [
-    "burlorigins.mixins.json"
+    "sweet.mixins.json"
   ],
 
   "depends": {

@@ -1,0 +1,14 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "sweet:lightning_god/lightning_resource",
+    "change": 1
+  },
+  "interval": 60,
+  "condition": {
+    "type": "origins:dimension",
+    "dimension": "minecraft:overworld"
+  },
+  "hidden": true
+}

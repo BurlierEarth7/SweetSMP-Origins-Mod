@@ -1,0 +1,24 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+      "type": "origins:and",
+      "actions": [
+          {
+            "type": "origins:change_resource",
+    "resource": "sweet:infected/infection",
+    "change": -2
+          },
+          {
+              "type": "origins:execute_command",
+              "command": "execute as @s run function sweet:infected/in_crimson_forest"
+          }
+      ]
+    
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:biome",
+    "biome": "minecraft:crimson_forest"
+  },
+  "hidden": true
+}

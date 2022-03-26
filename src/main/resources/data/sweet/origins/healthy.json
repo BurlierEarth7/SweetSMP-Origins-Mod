@@ -1,0 +1,10 @@
+{
+    "impact": 0,
+    "unchoosable": true,
+    "name": "§2§lHealthy",
+    "description": "You are §lnot§r infected, if you are ever §4bitten§r, refer to here for §4details about how to survive!§r",
+    "icon": "minecraft:barrier",
+    "powers": [
+
+    ]
+}

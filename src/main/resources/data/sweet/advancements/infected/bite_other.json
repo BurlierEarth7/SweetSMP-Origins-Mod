@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Contagious",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Bite another player or villager",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:weeping_vines"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "biteplayer": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:infected/mutate"
+}

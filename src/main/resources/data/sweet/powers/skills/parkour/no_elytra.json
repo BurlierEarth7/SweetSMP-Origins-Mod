@@ -1,0 +1,9 @@
+{
+    "type": "origins:prevent_elytra_flight",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "tellraw @s {\"text\": \"You cannot fly with the Parkour skill!\", \"color\": \"red\"}"
+    },
+    "name": "§4§nRunner",
+    "description": "You §4§lcannot§r use §e§lelytras"
+}

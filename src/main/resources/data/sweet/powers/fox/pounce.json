@@ -1,0 +1,27 @@
+{
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.5
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:fox/pounce"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:resource",
+                "resource": "sweet:fox/pounce_resource",
+                "comparison": "==",
+                "compare_to": 60
+            }
+        ]
+    },
+    "name": "Pounce",
+    "description": "When charged, crouch jumping is 2.5x as high. Charging takes 3 seconds and only happens when sneaking. Charge is lost when not sneaking or when you pounce"
+}

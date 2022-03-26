@@ -1,0 +1,2 @@
+execute store result score @s infectiontimer run resource get @s sweet:infected/infection
+title @s actionbar ["",{"text": "WARNING: Immunity critical, exit Forest immediately.","color": "dark_red","bold": true},{"text": " currently at ","color": "gold","bold": true},{"score":{"name":"@s","objective":"infectiontimer"},"color": "gold","bold": true},{"text": "/180 seconds","color": "gold","bold": true}]

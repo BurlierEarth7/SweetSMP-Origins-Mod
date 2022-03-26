@@ -1,0 +1,54 @@
+{
+  "type": "origins:multiple",
+  "damage": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "fall"
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:fall_distance",
+          "comparison": "<=",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:sneaking"
+        }
+      ]
+    }
+  },
+  "roll": {
+    "type": "origins:action_on_land",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "execute as @s run function sweet:skills/parkour/roll"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:fall_distance",
+          "comparison": "<=",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:fall_distance",
+          "comparison": ">=",
+          "compare_to": 4
+        },
+        {
+          "type": "origins:sneaking"
+        }
+      ]
+    }
+  },
+  "name": "§2§nSkill Roll",
+  "description": "You can fall from a height of §l§2up to 20 blocks§r without taking fall damage... as long as you §l§2sneak§r (Rolling gives you adrenaline, refilling 100 §bstamina§r)"
+}

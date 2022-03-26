@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Wallrun",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Used the wallrun ability",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:cobblestone_wall"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedlion": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:skills/parkour/selected"
+}

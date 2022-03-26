@@ -1,0 +1,14 @@
+{
+    "impact": 1,
+    "unchoosable": false,
+    "name": "§a§lPanda",
+    "description": "Soft and cuddly, these giants like to feast on tall bamboo shoots and relax all day",
+    "icon": "minecraft:bamboo",
+    "powers": [
+        "sweet:panda/speedboost",
+        "sweet:panda/eat_bamboo",
+        "sweet:panda/climb_logs",
+        "sweet:panda/losehunger",
+        "sweet:panda/select"
+    ]
+}

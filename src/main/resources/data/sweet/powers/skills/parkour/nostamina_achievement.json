@@ -1,0 +1,15 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "execute as @s run scoreboard players set @s exhausted 1"
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "sweet:skills/parkour/stamina_stamina",
+    "comparison": "==",
+    "compare_to": 0
+  },
+  "interval": 1,
+  "hidden": true
+}

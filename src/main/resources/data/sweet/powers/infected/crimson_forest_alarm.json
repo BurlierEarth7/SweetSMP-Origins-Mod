@@ -1,0 +1,13 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "execute as @s run function sweet:infected/alarm"
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:biome",
+    "biome": "minecraft:crimson_forest"
+  },
+  "hidden": true
+}

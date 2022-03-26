@@ -1,0 +1,19 @@
+{
+    "impact": 3,
+    "unchoosable": true,
+    "name": "§4§lBitten",
+    "description": "You §lhave§r been bitten by an infected! Stay in the light and make medicine to §lcounterract§r the effects!",
+    "icon": "minecraft:weeping_vines",
+    "powers": [
+        "sweet:infected/mutations/bitten/bitten_cure",
+        "sweet:infected/mutations/bitten/bitten_select",
+        "sweet:infected/mutations/bitten/bitten_infection",
+        "sweet:infected/mutations/bitten/bitten_infection_update",
+        "sweet:infected/mutations/bitten/bitten_infection_refill",
+        "sweet:infected/mutations/bitten/bitten_evolve",
+        "sweet:infected/mutations/bitten/bittenwarnstart",
+        "sweet:infected/mutations/bitten/bittenwarntwomin",
+        "sweet:infected/mutations/bitten/bittenwarnsixty",
+        "sweet:infected/mutations/bitten/bittenwarnthirty"
+    ]
+}

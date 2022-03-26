@@ -1,0 +1,11 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 180,
+    "start_value": 180,
+    "hud_render": {
+        "should_render": false
+    },
+    "name": "Infected",
+    "description": "You are infected! Unlike regular infecteds, you cannot see your conversion timer, stay in the light and pay attention to the alerts! If you evolve you will permanately become an infected! use the command \"/trigger help_bitten\" for more details"
+}

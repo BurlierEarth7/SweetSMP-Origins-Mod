@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:fox/snow_select"
+    },
+    "entity_action_respawned": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:fox/snow_select"
+    },
+    "entity_action_added": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:fox/snow_select"
+    },
+    "entity_action_removed": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:fox/snow_remove"
+    },
+    "name": "Fox",
+    "description": "You are 0.6x as tall as normal"
+}

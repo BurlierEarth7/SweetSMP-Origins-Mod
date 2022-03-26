@@ -1,0 +1,25 @@
+{
+    "impact": 2,
+    "unchoosable": false,
+    "name": "§9§lParkour",
+    "description": "Run, Jump, and climb more efficiently",
+    "icon": "minecraft:netherite_boots",
+    "powers": [
+        "sweet:skills/parkour/no_elytra",
+        "sweet:skills/parkour/reduced_hunger",
+        "sweet:skills/parkour/stamina",
+        "sweet:skills/parkour/consume_booster",
+        "sweet:skills/parkour/skill_roll",
+        "sweet:skills/parkour/nodamage_hay",
+        "sweet:skills/parkour/sprint",
+        "sweet:skills/parkour/climb",
+        "sweet:skills/parkour/modify_speed",
+        "sweet:skills/parkour/staminaupdate",
+        "sweet:skills/parkour/select",
+        "sweet:skills/parkour/enable_wlrn",
+        "sweet:skills/parkour/disable_wlrn",
+        "sweet:skills/parkour/wallrun_display",
+        "sweet:skills/parkour/climb_achievement",
+        "sweet:skills/parkour/nostamina_achievement"
+    ]
+}

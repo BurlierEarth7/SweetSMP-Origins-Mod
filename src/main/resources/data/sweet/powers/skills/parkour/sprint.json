@@ -1,0 +1,9 @@
+{
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.pickItem"
+    },
+    "name": "§2§nSprint",
+    "description": "Break out into a faster sprint, at the cost of §bstamina§r (Costs 2 §bstamina§r per tick)"
+}

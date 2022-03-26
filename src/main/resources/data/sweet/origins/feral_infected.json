@@ -1,0 +1,13 @@
+{
+    "impact": 3,
+    "unchoosable": true,
+    "name": "§4§lFeral Infected",
+    "description": "Your Immunity ran out and you mutated, bite someone else to revert this curse, at the cost of infecting them!",
+    "icon": "minecraft:weeping_vines",
+    "powers": [
+        "sweet:infected/mutations/mutationone",
+        "sweet:infected/mutations/hurt_in_sun",
+        "sweet:infected/mutations/feral_select",
+        "sweet:infected/mutations/feral_echolocate"
+    ]
+}

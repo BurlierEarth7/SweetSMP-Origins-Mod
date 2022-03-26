@@ -1,0 +1,10 @@
+{
+    "hidden": false,
+    "order": 1,
+    "origins": [
+        "sweet:healthy",
+        "sweet:bitten_infected"
+    ],
+    "name": "Infection details",
+    "default_origin": "sweet:healthy"
+}

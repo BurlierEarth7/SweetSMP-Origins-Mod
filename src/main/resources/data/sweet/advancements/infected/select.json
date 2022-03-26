@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Infected",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Became an Infected origin!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:crimson_fungus"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedinfected": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:root"
+}

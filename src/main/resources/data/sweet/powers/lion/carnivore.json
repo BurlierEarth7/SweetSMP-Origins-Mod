@@ -1,0 +1,59 @@
+{
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:meat"
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:golden_apple" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:enchanted_golden_apple" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:cod" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:salmon" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:tropical_fish" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:pufferfish" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:cooked_cod" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:cooked_salmon" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:rabbit_stew" }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:food"
+      }
+    ]
+  },
+
+  "name": "Carnivore",
+  "description": "You can only eat meat, fish, potions and golden apples."
+}

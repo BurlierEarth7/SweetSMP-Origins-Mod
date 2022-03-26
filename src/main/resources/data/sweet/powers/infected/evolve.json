@@ -1,0 +1,15 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "execute as @s run function sweet:infected/evolve"
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "sweet:infected/infection",
+    "comparison": "==",
+    "compare_to": 0
+  },
+  "hidden": true
+}

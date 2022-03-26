@@ -1,0 +1,20 @@
+{
+    "impact": 2,
+    "unchoosable": false,
+    "name": "§7§lSnow Fox",
+    "description": "Similar to the Fox, Snow Foxes spawn in taigas and aren't affected by powdered snow or sweet berries instead of being able to pounce",
+    "icon": "minecraft:white_wool",
+    "powers": [
+        "sweet:fox/snowfox/select",
+        "sweet:fox/lowerhealth",
+        "sweet:fox/runfast",
+        "sweet:fox/runfast_dark",
+        "sweet:fox/morefood_raw",
+        "sweet:fox/jumphigher",
+        "sweet:fox/nofalldamage",
+        "sweet:fox/slowinwater",
+        "sweet:fox/snowfox/nodamage_berries",
+        "sweet:fox/snowfox/nodamage_snow",
+        "sweet:fox/snowfox/spawnin_taiga"
+    ]
+}

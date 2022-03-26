@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Strong Arms",
+            "color": "gold",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Climbed a wall!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:ladder"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedlion": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:skills/parkour/selected"
+}

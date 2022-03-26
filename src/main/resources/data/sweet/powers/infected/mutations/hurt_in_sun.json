@@ -1,0 +1,38 @@
+{
+  "type": "origins:damage_over_time",
+  "interval": 10,
+  "onset_delay": 1,
+  "damage": 8,
+  "damage_easy": 4,
+  "damage_source": {
+    "name": "onFire",
+    "unblockable": true,
+    "bypasses_armor": true
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:brightness",
+            "comparison": ">",
+            "compare_to": 0.33333334
+          },
+          {
+            "type": "origins:exposed_to_sun"
+          }
+        ]
+      },
+      {
+        "type": "origins:status_effect",
+        "effect": "minecraft:fire_resistance",
+        "min_amplifier": 0,
+        "inverted": true
+      }
+    ]
+  },
+  "name": "Photosensitive",
+  "description": "Your skin violently burns in light unless you have fire resistance, stay away from it."
+}

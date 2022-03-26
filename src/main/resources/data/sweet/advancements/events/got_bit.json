@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Infectious",
+            "color": "dark_red",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Got bit by a feral infected",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:crimson_roots"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "wasbitten": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:root"
+}

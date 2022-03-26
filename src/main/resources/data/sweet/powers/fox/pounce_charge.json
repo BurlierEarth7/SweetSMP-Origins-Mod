@@ -1,0 +1,13 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "sweet:fox/pounce_resource",
+    "change": 1
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:sneaking"
+  },
+  "hidden": true
+}

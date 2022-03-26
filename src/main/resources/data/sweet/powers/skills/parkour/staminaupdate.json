@@ -1,0 +1,80 @@
+{
+  "type": "origins:multiple",
+  "lose": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "execute as @s run function sweet:skills/parkour/beginstamina"
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "sweet:skills/parkour/sprint"
+        },
+        {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:sneaking"
+            },
+            {
+              "type": "origins:or",
+              "conditions": [
+                {
+                  "type": "origins:collided_horizontally"
+                },
+                {
+                  "type": "origins:block_collision",
+                  "offset_x": 0.01,
+                  "offset_z": 0.01,
+                  "offset_y": 0
+                },
+                {
+                  "type": "origins:block_collision",
+                  "offset_x": -0.01,
+                  "offset_z": -0.01,
+                  "offset_y": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "interval": 1
+  },
+  "gain": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "execute as @s run function sweet:skills/parkour/endstamina"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "sweet:skills/parkour/sprint",
+          "inverted": true
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:sneaking",
+              "inverted": true
+            },
+            {
+              "type": "origins:collided_horizontally",
+              "inverted": true
+            }
+          ]
+        }
+      ]
+    },
+    "interval": 1
+  },
+  "hidden": true
+}

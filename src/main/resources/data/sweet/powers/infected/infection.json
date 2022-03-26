@@ -1,0 +1,19 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 180,
+    "start_value": 180,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 15
+    },
+    "name": "Mutate",
+    "description": "If your Immunity runs out, you will mutate into a feral zombie, entering light will harm you and biting other people will fix it. When mutated: Attack = Slash, Use = Bite. when biting another player, they become infected aswell. their infection can be stopped with medication but progress cannot be tracked as easily.",
+    "badges": [
+        {
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You have 3 minutes of Immunity, it can be refilled by staying in the light, or the sun. If it runs out you will transform into a Feral Infected. Entering a crimson forest will rapidly decrease it"
+        }
+    ]
+}

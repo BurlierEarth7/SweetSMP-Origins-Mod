@@ -1,0 +1,60 @@
+{
+  "type": "origins:multiple",
+  "nodamage": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "fall"
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:block_in_radius",
+          "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:hay_block"
+          },
+          "radius": 1,
+          "shape": "cube",
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
+  "highfall": {
+    "type": "origins:action_on_land",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "execute as @s run function sweet:skills/parkour/hay_landing"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:fall_distance",
+          "comparison": ">=",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:block_in_radius",
+          "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:hay_block"
+          },
+          "radius": 1,
+          "shape": "cube",
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
+  "name": "§2§nAdrenaline Rush",
+  "description": "You can fall from any height without taking fall damage as long as you §l§2land on a hay bale§r. (Landing on a §lhay bale§r from §l20+ blocks§r will refill §lall§r your §bstamina§r but make you weak and slowed for 8 seconds)"
+}

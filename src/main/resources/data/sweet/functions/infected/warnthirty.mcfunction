@@ -1,0 +1,2 @@
+title @s actionbar {"text": "EMERGENCY: 30 SECONDS OF IMMUNITY REMAINING. SEEK LIGHT IMMEDIATELY.","color": "dark_red","bold": true,"italic": true}
+playsound block.note_block.pling master @s ~ ~ ~ 1 1 1

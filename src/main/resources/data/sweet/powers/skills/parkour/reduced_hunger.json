@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.7
+    },
+    "name": "§2§nHunger Efficient",
+    "description": "You lose hunger much slower"
+}

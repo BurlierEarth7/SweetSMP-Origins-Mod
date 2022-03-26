@@ -1,0 +1,22 @@
+{
+    "impact": 2,
+    "unchoosable": false,
+    "name": "§6§lFox",
+    "description": "The classic fox",
+    "icon": "minecraft:orange_wool",
+    "powers": [
+        "sweet:fox/select",
+        "sweet:fox/lowerhealth",
+        "sweet:fox/runfast",
+        "sweet:fox/runfast_dark",
+        "sweet:fox/morefood_raw",
+        "sweet:fox/jumphigher",
+        "sweet:fox/pounce",
+        "sweet:fox/nofalldamage",
+        "sweet:fox/slowinwater",
+        "sweet:fox/pounce_resource",
+        "sweet:fox/pounce_charge",
+        "sweet:fox/pounce_decharge"
+
+    ]
+}

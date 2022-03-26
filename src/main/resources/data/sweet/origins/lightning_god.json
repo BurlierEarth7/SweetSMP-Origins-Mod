@@ -1,0 +1,15 @@
+{
+    "impact": 3,
+    "unchoosable": false,
+    "name": "§e§lLightning God",
+    "description": "TBA",
+    "icon": "minecraft:lightning_rod",
+    "powers": [
+        "sweet:lightning_god/no_netherite_armor",
+        "sweet:lightning_god/no_netherite_tools",
+        "sweet:lightning_god/lightning_summon",
+        "sweet:lightning_god/lightning_invulnerability",
+        "sweet:lightning_god/lightning_resource",
+        "sweet:lightning_god/lightning_recharge"
+    ]   
+}

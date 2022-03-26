@@ -1,0 +1,17 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "permission_level": 4,
+    "command": "execute as @s run function sweet:panda/dash"
+  },
+  "cooldown": 600,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+    "bar_index": 20
+  },
+  "key": "primary",
+  "name": "Dash",
+  "description": "Gain a big speed boost for 10 seconds"
+}

@@ -1,0 +1,48 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "execute as @s run scoreboard players set @s climbed 1"
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:sneaking"
+            },
+            {
+              "type": "origins:or",
+              "conditions": [
+                {
+                  "type": "origins:collided_horizontally"
+                },
+                {
+                  "type": "origins:block_collision",
+                  "offset_x": 0.01,
+                  "offset_z": 0.01,
+                  "offset_y": 0
+                },
+                {
+                  "type": "origins:block_collision",
+                  "offset_x": -0.01,
+                  "offset_z": -0.01,
+                  "offset_y": 0
+                }
+              ]
+            }
+          ]
+      },
+      {
+        "type": "origins:resource",
+        "resource": "sweet:skills/parkour/stamina_stamina",
+        "comparison": ">",
+        "compare_to": 1
+      }
+    ]
+  },
+  "interval": 1,
+  "hidden": true
+}

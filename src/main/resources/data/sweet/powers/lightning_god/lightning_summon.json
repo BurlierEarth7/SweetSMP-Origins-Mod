@@ -1,0 +1,50 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "gamerule showDeathMessages false",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:lightning_god/start_ray",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 1,
+        "action": {
+          "type": "origins:execute_command",
+          "command": "gamerule showDeathMessages true",
+          "permission_level": 4
+        }
+      },
+      {
+        "type": "origins:feed",
+        "food": 1.0,
+        "saturation": 1.0
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "sweet:lightning_god/lightning_resource",
+        "change": -1
+      }
+    ]
+  },
+  "cooldown": 1,
+  "hud_render": {
+    "should_render": false
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "sweet:lightning_god/lightning_resource",
+    "comparison": ">=",
+    "compare_to": 1
+  },
+  "key": "key.origins.primary_active",
+  "name": "Electrokinesis",
+  "description": "You are able to summon a lightning strike as long as you have enough charge, you also gain hunger every time you summon lightning. [Primary]"
+}

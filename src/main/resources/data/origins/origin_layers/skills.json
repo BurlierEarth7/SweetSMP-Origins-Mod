@@ -1,0 +1,10 @@
+{
+    "hidden": false,
+    "order": 99999,
+    "origins": [
+        "sweet:skills/none",
+        "sweet:skills/parkour",
+        "sweet:skills/stealthy"
+    ],
+    "name": "Skill"
+}

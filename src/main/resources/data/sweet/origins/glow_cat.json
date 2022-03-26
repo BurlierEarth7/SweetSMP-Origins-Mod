@@ -1,0 +1,11 @@
+{
+    "impact": 3,
+    "unchoosable": false,
+    "name": "§d§lGlow Cat",
+    "description": "Soft and cuddly, these felines glow in the dark, and are extremely light",
+    "icon": "minecraft:glow_berries",
+    "powers": [
+        "sweet:glowcat/glow",
+        "sweet:glowcat/see_light_blocks"
+    ]
+}

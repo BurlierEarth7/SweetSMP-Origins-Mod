@@ -1,0 +1,9 @@
+{
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "freeze"
+  },
+  "name": "Heavy Coat",
+  "description": "Powdered snow will not hurt you"
+}

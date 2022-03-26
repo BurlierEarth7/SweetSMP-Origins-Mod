@@ -1,0 +1,60 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:equipped_item_action",
+        "equipment_slot": "mainhand",
+        "action": {
+          "type": "origins:consume",
+          "amount": 1
+        }
+      },
+      {
+        "type": "origins:execute_command",
+        "permission_level": 4,
+        "command": "execute as @s run function sweet:panda/consume_bamboo"
+      }
+    ]
+  },
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+    "bar_index": 1,
+    "inverted": true
+  },
+  "key": {
+    "key": "key.use",
+    "continuous": false
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "item": "minecraft:bamboo"
+          }
+        }
+      },
+      {
+        "type": "origins:sneaking",
+        "inverted": true
+      }
+    ]
+  },
+
+  "name": "Hungry Panda",
+  "description": "Eating bamboo will restore some hunger, and give you strength for 10 seconds",
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "If you want to place the bamboo instead of eat it, hold sneak and right click to place it instead of eat it"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:lion/select"
+    },
+    "entity_action_respawned": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:lion/select"
+    },
+    "entity_action_added": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:lion/select"
+    },
+    "entity_action_removed": {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function sweet:lion/remove"
+    },
+    "name": "Sturdy Feet",
+    "description": "You always have jump boost"
+}

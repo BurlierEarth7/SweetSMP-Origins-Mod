@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Out of breath",
+            "color": "dark_red",
+            "bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Used all your stamina... take a breather!",
+            "bold": true
+        },
+        "icon": {
+            "item": "minecraft:stick",
+            "nbt": "{CustomModelData: 1}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "selectedlion": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "sweet:skills/parkour/selected"
+}
