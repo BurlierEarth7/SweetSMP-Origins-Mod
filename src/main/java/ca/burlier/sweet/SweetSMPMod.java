@@ -2,6 +2,9 @@ package ca.burlier.sweet;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -20,6 +23,9 @@ public class SweetSMPMod implements ModInitializer {
 	//Items
 	public static final Item STAMINA_BOOSTER = new Item(new FabricItemSettings().group(ItemGroup.MISC).maxCount(16).rarity(Rarity.RARE));
 
+	//Meme Things
+	public static final Item LEAN = new Item(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(1).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(100).saturationModifier(100f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 1, 25), 1).snack().build()));
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -29,6 +35,8 @@ public class SweetSMPMod implements ModInitializer {
 		//Register Items
 		Registry.register(Registry.ITEM, new Identifier("sweet", "stamina_booster"), STAMINA_BOOSTER);
 
+		//Register Memes
+		Registry.register(Registry.ITEM, new Identifier("sweet", "lean"), LEAN);
 
 		LOGGER.info("SweetSMP Origins Loaded!");
 	}
